@@ -8,8 +8,9 @@ function Intro() {
     this.draw = function () {
         background(0);
         fill("white");
+        textFont('Courier New');
         textSize(20);
-        textAlign(CENTER);
+        textAlign(CENTER, CENTER);
         text(introText[0], windowWidth / 2, windowHeight / 2);
     }
 

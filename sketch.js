@@ -1,27 +1,24 @@
 var mgr;
 
-function setup()
-{
+function setup() {
     createCanvas(windowWidth, windowHeight);
 
     mgr = new SceneManager();
 
     // Preload scenes. Preloading is normally optional
     // ... but needed if showNextScene() is used.
-    mgr.addScene ( Intro );
-    mgr.addScene ( DieThrow );
-    
+    mgr.addScene(Intro);
+    mgr.addScene(DieThrow);
+
 
     mgr.showNextScene();
 }
 
-function draw()
-{
+function draw() {
     mgr.draw();
 }
 
-function mousePressed()
-{
+function mousePressed() {
     mgr.handleEvent("mousePressed");
 }
 /*
@@ -38,9 +35,9 @@ function keyPressed()
             break;
         case '3':
             mgr.showScene( Animation3 );
-            break; 
+            break;
     }
-    
+
     // ... then dispatch via the SceneManager.
     mgr.handleEvent("keyPressed");
 }

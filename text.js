@@ -3,13 +3,13 @@ let introText = [
     "abortsamråddet,",
     "senabort,",
     "dødfødsel",
-    "og undertrykkelse af kvinders ret til at bestemme over egen krop.",
-    "Hvis dette er triggers for dig, så overvej ikke at fortsætte."
+    "og undertrykkelse af\nkvinders ret til at bestemme over\negen krop.",
+    "Hvis dette er triggers for dig,\nså overvej at stoppe her."
   ];
 
   let dieText = [
     "Lad os finde ud af hvem du er.",
-    "Først slår vi en terning for at finde ud af hvor privelligeret du er.",
+    "Først slår vi en terning\nfor at finde ud af,\nhvor privelligeret du er.",
     "Så slår vi en terning for at finde ud af, hvor alvorligt nogen andre mener barnet i din mave er stillet."
 
   ];

@@ -6,8 +6,8 @@ function setup() {
 function draw() {
   background(0);
   fill("white");
-  textSize(20)
-  text(introText[0], windowWidth/2, windowHeight/2);
+  textSize(20);
+  text(introText[0], windowWidth/4, windowHeight/2);
 }
 
 //klik igennem introtext og sig til når der ikke er flere

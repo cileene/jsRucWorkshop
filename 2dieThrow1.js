@@ -1,20 +1,15 @@
-/*
-function dieThrow1() {
+function DieThrow() {
+  
+  
+  this.setup = function () {
+    console.log("2DieThrow start");
+    createCanvas(windowWidth, windowHeight);
+  }
+
+  this.draw = function () {
+    background(0);
     fill("white");
     textSize(20);
-    text(dieText[0], windowWidth/4, windowHeight/2);
-      
-    if(mousePressed) {
-      // !!! TILFØJ TOUCH !!!
-      dieText.shift();
-      if (dieText.length === 0) {
-        // test at det virker
-        console.log("intro færdig");
-        // go on to dieThrow1
-        dieThrow1();
-      }
-    }
-
-        
+    text(dieText[0], windowWidth / 4, windowHeight / 2);
+  }
 }
-*/

@@ -4,7 +4,7 @@ let introText = [
     "senabort,",
     "dødfødsel",
     "og undertrykkelse af kvinders ret til at bestemme over egen krop.",
-    "Hvis dette er triggering for dig, så overvej ikke at fortsætte."
+    "Hvis dette er triggers for dig, så overvej ikke at fortsætte."
   ];
 
   let dieText = [

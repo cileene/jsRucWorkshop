@@ -1,31 +1,48 @@
-function setup() {
-  createCanvas(windowWidth, windowHeight);
+var mgr;
+
+function setup()
+{
+    createCanvas(600, 500);
+
+    mgr = new SceneManager();
+
+    // Preload scenes. Preloading is normally optional
+    // ... but needed if showNextScene() is used.
+    mgr.addScene ( Intro );
+    mgr.addScene ( DieThrow );
+    //mgr.addScene ( Animation3 );
+
+    mgr.showNextScene();
 }
 
-// vis introtext
-function draw() {
-  background(0);
-  fill("white");
-  textSize(20);
-  text(introText[0], windowWidth/4, windowHeight/2);
+function draw()
+{
+    mgr.draw();
 }
 
-//klik igennem introText og sig til når der ikke er flere
-function mousePressed() {
-  // !!! TILFØJ TOUCH !!!
-  introText.shift();
-  if (introText.length === 0) {
-    // test at det virker
-    console.log("intro færdig");
-    // fjern alt ?
-    remove();
-    // go on to displaying the text in the dieText array
-
+function mousePressed()
+{
+    mgr.handleEvent("mousePressed");
+}
+/*
+function keyPressed()
+{
+    // You can optionaly handle the key press at global level...
+    switch(key)
+    {
+        case '1':
+            mgr.showScene( Intro );
+            break;
+       /* case '2':
+            mgr.showScene( Animation2 );
+            break;
+        case '3':
+            mgr.showScene( Animation3 );
+            break; 
     }
-  } 
-
-  
-
-
-
-
+    
+    // ... then dispatch via the SceneManager.
+    mgr.handleEvent("keyPressed");
+}
+*/
+// Intro scene constructor function

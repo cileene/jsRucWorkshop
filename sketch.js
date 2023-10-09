@@ -10,13 +10,22 @@ function draw() {
   text(introText[0], windowWidth/4, windowHeight/2);
 }
 
-//klik igennem introtext og sig til når der ikke er flere
+//klik igennem introText og sig til når der ikke er flere
 function mousePressed() {
+  // !!! TILFØJ TOUCH !!!
   introText.shift();
   if (introText.length === 0) {
     // test at det virker
-    console.log("Det virker!");
-  }
-}
+    console.log("intro færdig");
+    // fjern alt ?
+    remove();
+    // go on to displaying the text in the dieText array
+
+    }
+  } 
+
+  
+
+
 
 

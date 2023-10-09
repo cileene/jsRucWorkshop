@@ -10,7 +10,6 @@ function DieThrow() {
   this.draw = function () {
     background(0);
     fill("white");
-    textFont('Courier');
     textSize(20);
     textAlign(CENTER, CENTER);
     text(dieText[currentDieTextIndex], windowWidth / 2, windowHeight / 2);

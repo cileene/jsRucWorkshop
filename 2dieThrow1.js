@@ -2,6 +2,7 @@ let currentDieTextIndex = 0;
 
 function DieThrow() {
 
+
   this.setup = function () {
     console.log("2DieThrow start");
     createCanvas(windowWidth, windowHeight);
@@ -19,12 +20,12 @@ function DieThrow() {
     // go from index 0 -> 1
     if (currentDieTextIndex === 0) {
       currentDieTextIndex++;
+      percLoop1.loop();
     }
 
     // check if the currentDieTextIndex exceeds the length of dieText
     if (currentDieTextIndex >= dieText.length) {
       console.log("2DieThrow1 end");
-      // go on to displaying the text in the dieText array
       // switch the scene
       this.sceneManager.showScene(DieThrow);
     }

@@ -2,7 +2,7 @@ var mgr;
 
 function setup()
 {
-    createCanvas(600, 500);
+    createCanvas(windowWidth, windowHeight);
 
     mgr = new SceneManager();
 
@@ -10,7 +10,7 @@ function setup()
     // ... but needed if showNextScene() is used.
     mgr.addScene ( Intro );
     mgr.addScene ( DieThrow );
-    //mgr.addScene ( Animation3 );
+    
 
     mgr.showNextScene();
 }

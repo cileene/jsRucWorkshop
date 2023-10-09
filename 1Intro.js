@@ -14,12 +14,10 @@ function Intro() {
     }
 
     this.mousePressed = function () {
-        // !!! TILFØJ TOUCH !!!
         introText.shift();
         if (introText.length === 0) {
-            // test at det virker
+            // test
             console.log("1Intro end");
-            // go on to displaying the text in the dieText array
             // switch the scene
             this.sceneManager.showScene(DieThrow);
         }

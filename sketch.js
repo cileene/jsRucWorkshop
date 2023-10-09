@@ -15,7 +15,7 @@ function mousePressed() {
   introText.shift();
   if (introText.length === 0) {
     // test at det virker
-    console.log("Done!");
+    console.log("Det virker!");
   }
 }
 

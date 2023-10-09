@@ -20,6 +20,7 @@ function DieThrow() {
     // go from index 0 -> 1
     if (currentDieTextIndex === 0) {
       currentDieTextIndex++;
+      // play the sound
       percLoop1.loop();
     }
 

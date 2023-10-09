@@ -7,7 +7,8 @@ let introText = [
     "og kvinders ret til\nselvbestemmelse\nover egen krop.",
     "Hvis dette er triggers for dig, ",
     "så overvej at stoppe her.",
-    "..."
+    "...",
+    "ok"
   ];
 
   let dieText = [

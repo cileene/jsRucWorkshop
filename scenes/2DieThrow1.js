@@ -35,6 +35,10 @@ function DieThrow() {
     } else if (currentDieTextIndex === 1) {
       // chooese random 1-6
       variableDieText = floor(random(1, 7));
+      // write to variable privilege
+      privilege = variableDieText;
+      console.log("privilege = ", privilege);
+      // print contents of variable privilege in console
 
 
 

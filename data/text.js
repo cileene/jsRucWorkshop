@@ -15,11 +15,12 @@ let introText = [
 let dieText = [
   "Lad os finde ud af hvem du er.",
   "Først slår vi en terning\nfor at finde ud af,\nhvor priviligeret du er.",
-  "Så slår vi en terning for at finde ud af, hvor alvorligt nogen andre mener barnet i din mave er stillet."
+  "Så slår vi en terning\nfor at finde ud af,\nhvor alvorlig nogen andre\nmener din situation er."
 
 ];
 
 let sixSidedDie = [
+  "index0",
   "1 / 6 point.",
   "2 / 6 point.",
   "3 / 6 point.",

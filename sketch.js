@@ -9,6 +9,7 @@ function setup() {
     // ... but needed if showNextScene() is used.
     mgr.addScene(Intro);
     mgr.addScene(DieThrow);
+    mgr.addScene(BadNews);
 
 
     mgr.showNextScene();

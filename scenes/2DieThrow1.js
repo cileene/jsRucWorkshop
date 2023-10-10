@@ -54,6 +54,8 @@ function DieThrow() {
       dieText.shift();
 
     } else if (dieText.length === 1) {
+      // play cymbal 2
+      cymbal2.play();
       // choose random 1-6
       variableDie2 = floor(random(1, 7));
       //write to variable severity
@@ -65,6 +67,8 @@ function DieThrow() {
 
       // if die1 haven't been thrown we will
     } else if (dieText.length === 2) {
+        // play cymbal 1
+        cymbal1.play();
       // chooese random 1-6
       variableDie1 = floor(random(1, 7));
       // write to variable privilege

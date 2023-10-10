@@ -1,5 +1,6 @@
 let introText = [
   "(tryk på skærmen for at starte)",
+  "(der er lyd i spillet)",
   "Dette er et spil om",
   "abortsamrådet,",
   "senabort,",
